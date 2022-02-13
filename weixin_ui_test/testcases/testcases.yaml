@@ -1,0 +1,12 @@
+test_add_contact :
+  -
+    "name" : "1234"
+    "acctid" : "65"
+    "mail": "ghhjkio"
+    "phone": "18965342367"
+    "expect" : "True"
+  - "name": "1234"
+    "acctid": "65"
+    "mail": "ghhjkio"
+    "phone": "18965342367"
+    "expect": "True"

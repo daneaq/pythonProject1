@@ -1,0 +1,16 @@
+env :
+  "defualt" : dev
+  "config" :
+    "dev" : https://qyapi.weixin.qq.com
+    "prd" : https://weixin.qq.com
+
+create_department :
+    "method" : "post"
+    "url" : "https://qyapi.weixin.qq.com/cgi-bin/department/create"
+    "params" :
+      "name" : ${name}
+      "name_en" : ${name_en}
+      "parentid" : ${parentid}
+      "order" : ${order}
+      "id" : ${id}
+      "access_token" : ${access_token}
