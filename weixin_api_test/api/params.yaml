@@ -14,3 +14,13 @@ create_department :
       "order" : ${order}
       "id" : ${id}
       "access_token" : ${access_token}
+      "debug" : 1
+
+
+delete_department:
+  "method": "post"
+  "url": "/cgi-bin/department/delete"
+  "params":
+    "id": ${id}
+    "access_token": ${access_token}
+

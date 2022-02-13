@@ -25,4 +25,14 @@ class Department(BaseApi):
 
         return res
 
+    def delete_department(self,id):
+        self._params = {
+            "access_token" : self.get_token(),
+            "id":id
+        }
+        data = self.steps(os.path.join(os.path.dirname(os.path.dirname(__file__)),'api/params.yaml'))
+
+        res = self.request(data)
+
+        return res
 
