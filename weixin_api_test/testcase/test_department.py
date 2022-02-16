@@ -22,4 +22,4 @@ class TestDepaerment:
         result = self.department.delete_department(id)
         print(result.json())
 
-        # assert result.json()['errcode'] == "0"
+        assert result.json()['errcode'] == "0"
