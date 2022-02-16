@@ -13,6 +13,7 @@ class App:
         options.debugger_address = "127.0.0.1:9222"
 
         self._driver = webdriver.Chrome(options=options)
+        
         self._driver.get("https://work.weixin.qq.com/wework_admin/frame#index")
 
         self._driver.implicitly_wait(10)
