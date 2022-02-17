@@ -1,16 +1,15 @@
+import os,sys
+
+dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(dir)
+sys.path.append("D:\\PycharmProjects\\pythonProject1\\venv\Lib\\site-packages")
+
 import inspect
 import json
 import os
 
 import requests
 import yaml
-import os,sys
-
-dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-sys.path.append(dir)
-sys.path.append("D:\\PycharmProjects\\pythonProject1\\venv\Lib\\site-packages")
-
 
 class BaseApi:
 
